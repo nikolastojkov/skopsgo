@@ -6,11 +6,11 @@ WIP
 TODO:
 - [x] Env config
 - [ ] Add Tailwind
-- [ ] Add HTMX
-- [ ] Add Templ
+- [x] Add HTMX
+- [x] Add Templ
 - [ ] Splash page (With HTMX example)
 - [ ] Add HTMX security middlewares
-- [ ] Refactor to have router handles separate
+- [ ] Neat handlers/routing
 - [ ] Hot reloading
 
 MAYBE TODO:

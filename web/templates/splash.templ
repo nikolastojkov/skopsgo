@@ -1,0 +1,14 @@
+package templates
+
+templ RenderSplash() {
+  <div id="mainTarget">
+	  <div>Skopsgo</div>
+    <button hx-get="/getDone" hx-trigger="click" hx-target="#mainTarget" hx-swap="innerHtml">Click Me</button>
+  </div>
+
+  <script src="static/htmx.min.js" />
+}
+
+templ Done() {
+  <div>Done!</div>
+}

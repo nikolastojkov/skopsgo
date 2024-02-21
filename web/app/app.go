@@ -2,21 +2,18 @@ package app
 
 import (
 	"fmt"
-	"github.com/nikolastojkov/skopsgo/web/templates"
-	"os"
-
 	"github.com/gin-gonic/gin"
+	"github.com/nikolastojkov/skopsgo/web/handlers"
+	"os"
 )
 
 func LoadApp() {
 	port := os.Getenv("SERVER_PORT")
-
 	r := gin.Default()
+	r.Static("/static", "./web/static")
 
-	r.GET("/", func(c *gin.Context) {
-		comp := templates.Hello("World")
-		comp.Render(c, c.Writer)
-	})
+	// Load middleware
+	handlers.LoadHandlers(r)
 
 	r.Run(fmt.Sprintf(":%s", port))
 }
