@@ -10,6 +10,7 @@ TODO:
 - [ ] Add Templ
 - [ ] Splash page (With HTMX example)
 - [ ] Add HTMX security middlewares
+- [ ] Refactor to have router handles separate
 - [ ] Hot reloading
 
 MAYBE TODO:
