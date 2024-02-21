@@ -1,12 +1,32 @@
 package templates
 
 templ RenderSplash() {
-  <div id="mainTarget">
-	  <div>Skopsgo</div>
-    <button hx-get="/getDone" hx-trigger="click" hx-target="#mainTarget" hx-swap="innerHtml">Click Me</button>
-  </div>
-
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Placeholder Title Teehee</title>
+    <link rel="stylesheet" href="static/outputStyle.css" />
+  </head>
+  <body>
+    <main>
+      <div id="mainTarget">
+        <div>Skopsgo</div>
+        <button 
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          hx-get="/getDone"
+          hx-trigger="click"
+          hx-target="#mainTarget"
+          hx-swap="innerHtml">
+            Click Me
+          </button>
+      </div>
+    </main>
   <script src="static/htmx.min.js" />
+  </body>
+</html>
 }
 
 templ Done() {
