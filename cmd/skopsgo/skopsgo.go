@@ -2,26 +2,16 @@ package main
 
 import (
   "net/http"
-
-  "log"
   "fmt"
-  "os"
   "github.com/gin-gonic/gin"
-  "github.com/joho/godotenv"
+  "github.com/nikolastojkov/skopsgo/internal/config"
+  "os"
 )
 
 func main() {
-  err := godotenv.Load(".env")
-
-  if err != nil {
-    log.Fatalf("Error loading .env file")
-  }
+  config.LoadEnvConfig()
 
   port := os.Getenv("SERVER_PORT")
-
-  if port == "" {
-    port = "8080"
-  }
 
   r := gin.Default()
   r.GET("/ping", func(c *gin.Context) {
