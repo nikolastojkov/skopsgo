@@ -7,9 +7,9 @@ TODO:
 - [x] Env config
 - [ ] Hot reloading
 - [ ] Add Tailwind
-- [ ] Splash page
 - [ ] Add HTMX
 - [ ] Add Templ
+- [ ] Splash page (With HTMX example)
 - [ ] Add HTMX security middlewares
 
 MAYBE TODO:
