@@ -5,12 +5,12 @@ WIP
 
 TODO:
 - [x] Env config
-- [ ] Hot reloading
 - [ ] Add Tailwind
 - [ ] Add HTMX
 - [ ] Add Templ
 - [ ] Splash page (With HTMX example)
 - [ ] Add HTMX security middlewares
+- [ ] Hot reloading
 
 MAYBE TODO:
 - [ ] SQLite
