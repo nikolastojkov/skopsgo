@@ -5,7 +5,7 @@ WIP
 
 TODO:
 - [x] Env config
-- [ ] Add Tailwind
+- [x] Add Tailwind
 - [x] Add HTMX
 - [x] Add Templ
 - [ ] Splash page (With HTMX example)

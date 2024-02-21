@@ -21,3 +21,4 @@
 go.work
 .env
 /web/static/outputStyle.css
+Makefile
