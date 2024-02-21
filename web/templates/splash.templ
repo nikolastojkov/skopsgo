@@ -1,34 +1,43 @@
 package templates
 
-templ RenderSplash() {
+templ Layout(contents templ.Component) {
   <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Placeholder Title Teehee</title>
-    <link rel="stylesheet" href="static/outputStyle.css" />
-  </head>
-  <body>
-    <main>
-      <div id="mainTarget">
-        <div>Skopsgo</div>
-        <button 
-          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-          hx-get="/getDone"
-          hx-trigger="click"
-          hx-target="#mainTarget"
-          hx-swap="innerHtml">
-            Click Me
-          </button>
-      </div>
-    </main>
-  <script src="static/htmx.min.js" />
-  </body>
-</html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Placeholder Title Teehee</title>
+      <link rel="stylesheet" href="static/outputStyle.css" />
+    </head>
+    <body>
+      <main id="body">
+        @contents
+      </main>
+    <script src="static/htmx.min.js" />
+    </body>
+  </html>
 }
 
-templ Done() {
-  <div>Done!</div>
+templ Splash() {
+  <div id="mainTarget">
+    <div>Skopsgo</div>
+    <p>This is a counter with working with HTMX: <span id="counter">0</span></p>
+
+    <button 
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-6"
+      hx-post="/counterDecrement"
+      hx-target="#counter"
+      >
+        -
+      </button>
+
+    <button 
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      hx-post="/counterIncrement"
+      hx-target="#counter"
+      >
+        +
+      </button>
+  </div>
 }
