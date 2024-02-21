@@ -2,9 +2,10 @@ package app
 
 import (
 	"fmt"
-	"github.com/gin-gonic/gin"
-	"net/http"
+	"github.com/nikolastojkov/skopsgo/web/templates"
 	"os"
+
+	"github.com/gin-gonic/gin"
 )
 
 func LoadApp() {
@@ -13,7 +14,8 @@ func LoadApp() {
 	r := gin.Default()
 
 	r.GET("/", func(c *gin.Context) {
-		c.String(http.StatusOK, "Hello World")
+		comp := templates.Hello("World")
+		comp.Render(c, c.Writer)
 	})
 
 	r.Run(fmt.Sprintf(":%s", port))
