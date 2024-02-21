@@ -1,4 +1,4 @@
 # Skopsgo
-An opinionated Git starter kit.
+An opinionated Go starter kit.
 
 WIP
