@@ -3,7 +3,7 @@ package app
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"github.com/nikolastojkov/skopsgo/web/handlers"
+	"github.com/nikolastojkov/skopsgo/internal/handlers"
 	"os"
 )
 
