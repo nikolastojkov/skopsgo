@@ -6,7 +6,7 @@ import (
 	"github.com/nikolastojkov/skopsgo/web/templates"
 )
 
-var count int
+var count int = 1
 
 func LoadHandlers(r *gin.Engine) {
 	r.GET("/", func(c *gin.Context) {
@@ -21,7 +21,7 @@ func LoadHandlers(r *gin.Engine) {
 	})
 
 	r.POST("/counterDecrement", func(c *gin.Context) {
-		if count != 0 {
+		if count != 1 {
 			count--
 		}
 		c.String(c.Writer.Status(), fmt.Sprintf("%d", count))
