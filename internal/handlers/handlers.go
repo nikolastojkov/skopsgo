@@ -5,11 +5,11 @@ import (
 	"github.com/nikolastojkov/skopsgo/web/templates"
 )
 
-func LoadHandlers(r *gin.Engine) {
-	r.GET("/", func(c *gin.Context) {
-		comp := templates.Splash()
-		templates.Layout(comp).Render(c, c.Writer)
+func LoadHandlers(router *gin.Engine) {
+	router.GET("/", func(context *gin.Context) {
+		component := templates.Splash()
+		templates.Layout(component).Render(context, context.Writer)
 	})
 
-	loadCounterHandler(r)
+	loadCounterHandler(router)
 }

@@ -9,11 +9,11 @@ import (
 
 func LoadApp() {
 	port := os.Getenv("SERVER_PORT")
-	r := gin.Default()
-	r.Static("/static", "./web/static")
+	router := gin.Default()
+	router.Static("/static", "./web/static")
 
 	// Load middleware
-	handlers.LoadHandlers(r)
+	handlers.LoadHandlers(router)
 
-	r.Run(fmt.Sprintf(":%s", port))
+	router.Run(fmt.Sprintf(":%s", port))
 }

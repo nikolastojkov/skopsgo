@@ -5,19 +5,19 @@ import (
   "fmt"
 ) 
 
-var count int = 1
+var counterValue int = 1
 
-func loadCounterHandler(r *gin.Engine) {
-  r.POST("/counterIncrement", func(c *gin.Context) {
-		count++
-		c.String(c.Writer.Status(), fmt.Sprintf("%d", count))
+func loadCounterHandler(router *gin.Engine) {
+  router.POST("/counterIncrement", func(context *gin.Context) {
+		counterValue++
+		context.String(context.Writer.Status(), fmt.Sprintf("%d", counterValue))
 	})
 
-	r.POST("/counterDecrement", func(c *gin.Context) {
-		if count != 1 {
-			count--
+	router.POST("/counterDecrement", func(context *gin.Context) {
+		if counterValue != 1 {
+			counterValue--
 		}
 
-		c.String(c.Writer.Status(), fmt.Sprintf("%d", count))
+		context.String(context.Writer.Status(), fmt.Sprintf("%d", counterValue))
 	})
 }
