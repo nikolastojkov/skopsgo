@@ -74,9 +74,9 @@ templ Splash() {
         <p class="mt-6 text-lg leading-8 text-gray-600">Current count value: <span id="counter">1</span></p>
 
         <div class="mt-10 flex items-center justify-center gap-x-6">
-<button hx-post="/counterDecrement"
+<button hx-put="/counterDecrement"
       hx-target="#counter" id="counter" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Decrement</button>
-<button hx-post="/counterIncrement"
+<button hx-put="/counterIncrement"
       hx-target="#counter" id="counter" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Increment</button>
 
         </div>
