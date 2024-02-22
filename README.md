@@ -10,12 +10,7 @@ TODO:
 - [x] Add Tailwind
 - [x] Add HTMX
 - [x] Add Templ
-- [ ] Splash page (With HTMX example)
+- [x] Splash page (With HTMX example)
 - [ ] Add HTMX security middlewares
 - [ ] Neat handlers/routing
 - [ ] Hot reloading
-
-MAYBE TODO:
-- [ ] SQLite
-- [ ] File based error logging
-- [ ] YAML configuration option along with env
