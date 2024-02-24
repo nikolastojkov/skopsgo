@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/nikolastojkov/skopsgo/internal/handlers"
+	"github.com/nikolastojkov/skopsgo/internal/middleware"
 	"os"
 )
 
@@ -12,7 +13,7 @@ func LoadApp() {
 	router := gin.Default()
 	router.Static("/static", "./web/static")
 
-	// Load middleware
+	middleware.LoadMiddleware(router)
 	handlers.LoadHandlers(router)
 
 	router.Run(fmt.Sprintf(":%s", port))
