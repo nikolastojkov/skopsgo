@@ -33,6 +33,8 @@ To run the container, run `docker run -p PORT:PORT PROJECT_NAME`
 ## How to use
 After installing the starter you'll see that there is a splash screen with an example counter using HTMX, this is to verify that everything is setup properly and working.
 
+<img src="https://i.ibb.co/RhHDTRd/splash-Final.jpg" height="480px" />
+
 You're safe to delete:
 - The `splash.templ` file in `web/templates/splash.templ`
 - The counter handlers at `internal/handlers/counter.go`
