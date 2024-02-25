@@ -31,7 +31,9 @@ To build the container, run: `docker build --rm -t PROJECT_NAME .`
 To run the container, run `docker run -p PORT:PORT PROJECT_NAME`
 
 ## How to use
-After installing the starter you'll see that there is a splash screen with an example counter using HTMX, this is to verify that everything is setup properly and working.
+After installing the starter you'll see that there is a splash screen with an example counter using HTMX.
+
+This is to verify that everything is setup properly and working.
 
 <img src="https://i.ibb.co/RhHDTRd/splash-Final.jpg" height="480px" />
 
