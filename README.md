@@ -1,5 +1,5 @@
 # Skopsgo
-An opinionated Go starter kit with HTMX, Tailwind, and Templ.
+An opinionated, barebones Go starter kit with HTMX, Tailwind, and Templ.
 
 <img src="https://i.ibb.co/QHS4xb4/skopsgo-Github.png" height="480px" />
 
