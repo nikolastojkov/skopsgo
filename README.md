@@ -3,6 +3,8 @@ An opinionated, barebones Go starter kit with HTMX, Tailwind, and Templ.
 
 <img src="https://i.ibb.co/QHS4xb4/skopsgo-Github.png" height="480px" />
 
+Thanks to [RevanchistX](https://github.com/RevanchistX) for this wonderful rendition.
+
 ## Why
 I needed a starter using HTMX, Tailwind, and Templ that I'll use for my own Go projects, and since this is how I usually structure my code I've decided to publish it to GitHub.
 
